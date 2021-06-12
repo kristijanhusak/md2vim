@@ -318,6 +318,7 @@ func (*vimDoc) AutoLink(out *bytes.Buffer, link []byte, kind int) {
 }
 
 func (*vimDoc) CodeSpan(out *bytes.Buffer, text []byte) {
+	// Write as it is
 	out.WriteString("`")
 	out.Write(text)
 	out.WriteString("`")
